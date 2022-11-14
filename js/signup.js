@@ -14,9 +14,99 @@ async function logUser(obj) {
 		.from('Users')
 		.insert(obj)
 	console.log(data, error)
+
+	specialization(obj)
 }
 
-async function signupUserSupabase(obj) {
+async function specialization(obj) {
+	await client
+		.from('Users')
+		.select('id')
+		.order('id', { ascending: false })
+		.limit(1)
+		.then((response) => {
+			if (obj.Role == "Donor") {
+				const id = response.data[0].id
+				client
+					.from('Donors')
+					.insert([{ id: id }])
+					.then((response) => {
+						console.log(response)
+					})
+			}
+			else {
+				const id = response.data[0].id
+				client
+					.from('Volunteers')
+					.insert([{ id: id, Department: obj.Role }])
+					.then((response) => {
+						volunteersSpecial(obj, id)
+						console.log(response)
+					})
+			}
+		})
+}
+
+async function volunteersSpecial(obj, userId) {
+	await client
+		.from('Volunteers')
+		.select('Vol_id')
+		.order('Vol_id', { ascending: false })
+		.limit(1)
+		.then((response) => {
+			if (obj.Role == "Medical Volunteer") {
+				const Vol_id = response.data[0].Vol_id
+				client
+					.from('Medical_Vol')
+					.insert([{ Vol_id: Vol_id }])
+					.then((response) => {
+						console.log(response)
+					})
+			}
+
+			else if (obj.Role == "Finance Management") {
+				const Vol_id = response.data[0].Vol_id
+				client
+					.from('Finance_Vol')
+					.insert([{ Vol_id: Vol_id }])
+					.then((response) => {
+						console.log(response)
+					})
+			}
+
+			else if (obj.Role == "Educational Volunteer") {
+				const Vol_id = response.data[0].Vol_id
+				client
+					.from('Educational_Vol')
+					.insert([{ Vol_id: Vol_id }])
+					.then((response) => {
+						console.log(response)
+					})
+			}
+
+			else if (obj.Role == "Legal Aid Services") {
+				const Vol_id = response.data[0].Vol_id
+				client
+					.from('Legal_Vol')
+					.insert([{ Vol_id: Vol_id }])
+					.then((response) => {
+						console.log(response)
+					})
+			}
+
+			else if (obj.Role == "Media Management") {
+				const Vol_id = response.data[0].Vol_id
+				client
+					.from('MediaMan_Vol')
+					.insert([{ Vol_id: Vol_id }])
+					.then((response) => {
+						console.log(response)
+					})
+			}
+		})
+}
+
+async function signupUserSupabase(obj, filler) {
 	let { user, error } = await client.auth.signUp({
 		email: obj.Email, password: obj.Password
 	})
@@ -35,20 +125,8 @@ async function signup() {
 		event.preventDefault()
 		const formData = new FormData(form)
 		const email = formData.get("email")
-		// check if email is already in database
-		client
-			.from('Users')
-			.select('Email')
-			.eq('Email', email)
-			.then((response) => {
-				if (response.data.length > 0) {
-					alert("Email already exists")
-					// redirect to login page after 5 seconds
-					setTimeout(() => {
-						window.location.href = "login.html"
-					}, 1000)
-				}
-			})
+
+
 		const password = formData.get("password")
 		const password2 = formData.get("password2")
 		const Fname = formData.get("first_name")
@@ -61,8 +139,24 @@ async function signup() {
 		} else { gender = "Female" }
 		const phone = formData.get("phone")
 		const position = formData.get("subject")
+
+		client
+			.from('Users')
+			.select('Email')
+			.eq('Email', email)
+			.then((response) => {
+				if (response.data.length > 0) {
+					alert("Email already exists")
+					setTimeout(() => {
+						window.location.href = "login.html"
+					}, 3000)
+					return false
+				}
+			})
+
 		if (password == password2) {
 			const filler = {
+				// id : 0,				Enable when need to reset counter!
 				First_Name: Fname,
 				Last_Name: Lname,
 				Email: email,
@@ -78,9 +172,13 @@ async function signup() {
 			console.log(filler)
 			logUser(filler)
 			signupUserSupabase(supaUser)
+
+
 			setTimeout(() => {
 				window.location.href = "login.html"
-			}, 2000)
+			}, 3000)
+
+
 		}
 		else {
 			alert("Passwords do not match")
