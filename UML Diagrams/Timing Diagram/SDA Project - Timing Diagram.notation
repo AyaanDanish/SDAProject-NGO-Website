@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Ms8fQHLnEe2FrYUNuinklg" type="PapyrusUMLTimingDiagram" name="Admin Timing Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_NwjRUHLnEe2FrYUNuinklg" type="Interaction_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NwjRUnLnEe2FrYUNuinklg" type="Interaction_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_NwjRU3LnEe2FrYUNuinklg" type="Interaction_SubfragmentCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_RX-rAHLnEe2FrYUNuinklg" type="Lifeline_FullShape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_RX_SEHLnEe2FrYUNuinklg" type="Lifeline_FullNameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_RX_SEXLnEe2FrYUNuinklg" type="Lifeline_FullStateDefinitionCompartment">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_RX_SEnLnEe2FrYUNuinklg"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_RX_SE3LnEe2FrYUNuinklg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RX_SFHLnEe2FrYUNuinklg"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_RX_SFXLnEe2FrYUNuinklg" type="Lifeline_FullSubfragmentCompartment">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RX_SFnLnEe2FrYUNuinklg"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_RX_SF3LnEe2FrYUNuinklg" visible="false" type="Lifeline_FullTimeRulerCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_RYExoHLnEe2FrYUNuinklg" type="Node_FreeTimeRulerShape">
+            <children xmi:type="notation:BasicCompartment" xmi:id="_RYExonLnEe2FrYUNuinklg" type="Node_FreeTimeRulerCompartment">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RYExo3LnEe2FrYUNuinklg"/>
+            </children>
+            <element xsi:nil="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RYExoXLnEe2FrYUNuinklg"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_RX_SGHLnEe2FrYUNuinklg"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_RX_SGXLnEe2FrYUNuinklg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RX_SGnLnEe2FrYUNuinklg"/>
+        </children>
+        <element xmi:type="uml:Lifeline" href="SDA%20Project%20-%20Timing%20Diagram.uml#_RX9c4HLnEe2FrYUNuinklg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RX-rAXLnEe2FrYUNuinklg"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_R5DXwHLnEe2FrYUNuinklg" type="Lifeline_FullShape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_R5DXwnLnEe2FrYUNuinklg" type="Lifeline_FullNameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_R5DXw3LnEe2FrYUNuinklg" type="Lifeline_FullStateDefinitionCompartment">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_R5DXxHLnEe2FrYUNuinklg"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_R5DXxXLnEe2FrYUNuinklg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R5DXxnLnEe2FrYUNuinklg"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_R5DXx3LnEe2FrYUNuinklg" type="Lifeline_FullSubfragmentCompartment">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R5DXyHLnEe2FrYUNuinklg"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_R5DXyXLnEe2FrYUNuinklg" visible="false" type="Lifeline_FullTimeRulerCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_R5I3UHLnEe2FrYUNuinklg" type="Node_FreeTimeRulerShape">
+            <children xmi:type="notation:BasicCompartment" xmi:id="_R5I3UnLnEe2FrYUNuinklg" type="Node_FreeTimeRulerCompartment">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R5I3U3LnEe2FrYUNuinklg"/>
+            </children>
+            <element xsi:nil="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R5I3UXLnEe2FrYUNuinklg"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_R5DXynLnEe2FrYUNuinklg"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_R5DXy3LnEe2FrYUNuinklg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R5DXzHLnEe2FrYUNuinklg"/>
+        </children>
+        <element xmi:type="uml:Lifeline" href="SDA%20Project%20-%20Timing%20Diagram.uml#_R5BikHLnEe2FrYUNuinklg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R5DXwXLnEe2FrYUNuinklg"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_SNMbwHLnEe2FrYUNuinklg" type="Lifeline_FullShape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_SNNC0HLnEe2FrYUNuinklg" type="Lifeline_FullNameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_SNNC0XLnEe2FrYUNuinklg" type="Lifeline_FullStateDefinitionCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_UkecMHLnEe2FrYUNuinklg" type="Node_StateDefinitionShape">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UkjUsXLnEe2FrYUNuinklg" source="org.eclipse.papyrus.uml.diagram.timing.StateDefinitionView">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UkjUsnLnEe2FrYUNuinklg" key="org.eclipse.papyrus.uml.diagram.timing.StateDefinitionViewID" value="_UkjUsHLnEe2FrYUNuinklg"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UkjUtXLnEe2FrYUNuinklg" key="org.eclipse.papyrus.uml.diagram.timing.StateDefinitionViewName" value="Entering Info"/>
+            </eAnnotations>
+            <children xmi:type="notation:DecorationNode" xmi:id="_UkfDQXLnEe2FrYUNuinklg" type="Node_StateDefinitionNameLabel">
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_UkfDQnLnEe2FrYUNuinklg"/>
+            </children>
+            <element xsi:nil="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UkfDQHLnEe2FrYUNuinklg"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_yd2fsHLnEe2FrYUNuinklg" type="Node_StateDefinitionShape">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yd7_QXLnEe2FrYUNuinklg" source="org.eclipse.papyrus.uml.diagram.timing.StateDefinitionView">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yd7_QnLnEe2FrYUNuinklg" key="org.eclipse.papyrus.uml.diagram.timing.StateDefinitionViewID" value="_yd7_QHLnEe2FrYUNuinklg"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yd7_RHLnEe2FrYUNuinklg" key="org.eclipse.papyrus.uml.diagram.timing.StateDefinitionViewName" value="hjkhjkhkj"/>
+            </eAnnotations>
+            <children xmi:type="notation:DecorationNode" xmi:id="_yd3GwHLnEe2FrYUNuinklg" type="Node_StateDefinitionNameLabel">
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_yd3GwXLnEe2FrYUNuinklg"/>
+            </children>
+            <element xsi:nil="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yd2fsXLnEe2FrYUNuinklg"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_SNNC0nLnEe2FrYUNuinklg"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_SNNC03LnEe2FrYUNuinklg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNNC1HLnEe2FrYUNuinklg"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_SNNC1XLnEe2FrYUNuinklg" type="Lifeline_FullSubfragmentCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_Ukj7wnLnEe2FrYUNuinklg" type="StateInvariant_FullShape">
+            <children xmi:type="notation:DecorationNode" xmi:id="_Ukj7xHLnEe2FrYUNuinklg" type="StateInvariant_FullStereotypeLabel">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_Ukj7xXLnEe2FrYUNuinklg" y="15"/>
+            </children>
+            <element xmi:type="uml:StateInvariant" href="SDA%20Project%20-%20Timing%20Diagram.uml#_UkjUtnLnEe2FrYUNuinklg"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ukj7w3LnEe2FrYUNuinklg"/>
+          </children>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNNC1nLnEe2FrYUNuinklg"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_SNNC13LnEe2FrYUNuinklg" visible="false" type="Lifeline_FullTimeRulerCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_SNTJcHLnEe2FrYUNuinklg" type="Node_FreeTimeRulerShape">
+            <children xmi:type="notation:BasicCompartment" xmi:id="_SNTJcnLnEe2FrYUNuinklg" type="Node_FreeTimeRulerCompartment">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNTJc3LnEe2FrYUNuinklg"/>
+            </children>
+            <element xsi:nil="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNTJcXLnEe2FrYUNuinklg"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_SNNC2HLnEe2FrYUNuinklg"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_SNNC2XLnEe2FrYUNuinklg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNNC2nLnEe2FrYUNuinklg"/>
+        </children>
+        <element xmi:type="uml:Lifeline" href="SDA%20Project%20-%20Timing%20Diagram.uml#_SNJYcHLnEe2FrYUNuinklg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNMbwXLnEe2FrYUNuinklg"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_NwjRVHLnEe2FrYUNuinklg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_NwjRVXLnEe2FrYUNuinklg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NwjRVnLnEe2FrYUNuinklg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_NwjRV3LnEe2FrYUNuinklg" type="Interaction_TimeRulerCompartment">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NwnixHLnEe2FrYUNuinklg" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NwnixXLnEe2FrYUNuinklg" key="visible" value="true"/>
+      </eAnnotations>
+      <children xmi:type="notation:Shape" xmi:id="_NwniwHLnEe2FrYUNuinklg" type="Node_FreeTimeRulerShape">
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NwniwnLnEe2FrYUNuinklg" type="Node_FreeTimeRulerCompartment">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Nwniw3LnEe2FrYUNuinklg"/>
+        </children>
+        <element xsi:nil="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NwniwXLnEe2FrYUNuinklg"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_NwjRWHLnEe2FrYUNuinklg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_NwjRWXLnEe2FrYUNuinklg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NwjRWnLnEe2FrYUNuinklg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_NwmUoHLnEe2FrYUNuinklg" type="compartment_shape_display">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_NwmUoXLnEe2FrYUNuinklg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NwmUonLnEe2FrYUNuinklg"/>
+    </children>
+    <element xmi:type="uml:Interaction" href="SDA%20Project%20-%20Timing%20Diagram.uml#_NwiDMHLnEe2FrYUNuinklg"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NwjRUXLnEe2FrYUNuinklg" x="20" y="20" width="1681" height="601"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_Ms8fQXLnEe2FrYUNuinklg" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_Ms8fQnLnEe2FrYUNuinklg"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_Ms8fQ3LnEe2FrYUNuinklg" diagramKindId="org.eclipse.papyrus.uml.diagram.timing">
+    <owner xmi:type="uml:Model" href="SDA%20Project%20-%20Timing%20Diagram.uml#_dU8ToHLkEe2FrYUNuinklg"/>
+  </styles>
+  <element xmi:type="uml:Model" href="SDA%20Project%20-%20Timing%20Diagram.uml#_dU8ToHLkEe2FrYUNuinklg"/>
+</notation:Diagram>

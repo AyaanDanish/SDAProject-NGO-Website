@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__yWB4GTAEe2rVZWVbeTsiw" name="SDA Project - ECB Pattern Diagram">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_b3pg4GTbEe2aR830N8nOoQ" annotatedElement="__yWB4GTAEe2rVZWVbeTsiw">
+    <body>Refers to users who are just browsing the site and do not need to sign in&#xD;
+</body>
+  </ownedComment>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="__0n50GTAEe2rVZWVbeTsiw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_HA_Z4GTBEe2rVZWVbeTsiw" name="Admin"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_JfMhsGTBEe2rVZWVbeTsiw" name="Volunteer"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_KE_9cGTBEe2rVZWVbeTsiw" name="Donor"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_TizUoGTBEe2rVZWVbeTsiw" name="&lt;&lt;Boundary>> Donor Portal"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_xxDZ8GTXEe2aR830N8nOoQ" name="&lt;&lt;Boundary>> Redeem Points Page"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2PetEGTXEe2aR830N8nOoQ" name="&lt;&lt;Control>> Redeem Points"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_4p5hEGTXEe2aR830N8nOoQ" name="&lt;&lt;Entity>> Donor Points Database"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9Z66gGTXEe2aR830N8nOoQ" memberEnd="_9Z8IoGTXEe2aR830N8nOoQ _9Z8IoWTXEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9Z7hkGTXEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9Z7hkWTXEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9Z8IoGTXEe2aR830N8nOoQ" name="&lt;&lt;entity>> donor points database" type="_4p5hEGTXEe2aR830N8nOoQ" association="_9Z66gGTXEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9Z8IoWTXEe2aR830N8nOoQ" name="&lt;&lt;control>> redeem points" type="_2PetEGTXEe2aR830N8nOoQ" association="_9Z66gGTXEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_95d9QGTXEe2aR830N8nOoQ" memberEnd="_95ekUmTXEe2aR830N8nOoQ _95ekU2TXEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_95ekUGTXEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_95ekUWTXEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_95ekUmTXEe2aR830N8nOoQ" name="&lt;&lt;control>> redeem points" type="_2PetEGTXEe2aR830N8nOoQ" association="_95d9QGTXEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_95ekU2TXEe2aR830N8nOoQ" name="&lt;&lt;boundary>> redeem points page" type="_xxDZ8GTXEe2aR830N8nOoQ" association="_95d9QGTXEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__nSxAGTXEe2aR830N8nOoQ" memberEnd="__nTYEWTXEe2aR830N8nOoQ __nTYEmTXEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__nSxAWTXEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__nTYEGTXEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__nTYEWTXEe2aR830N8nOoQ" name="donor" type="_KE_9cGTBEe2rVZWVbeTsiw" association="__nSxAGTXEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__nTYEmTXEe2aR830N8nOoQ" name="&lt;&lt;boundary>> redeem points page" type="_xxDZ8GTXEe2aR830N8nOoQ" association="__nSxAGTXEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_AfeWMGTYEe2aR830N8nOoQ" memberEnd="_AfeWM2TYEe2aR830N8nOoQ _Afe9QGTYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AfeWMWTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AfeWMmTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_AfeWM2TYEe2aR830N8nOoQ" name="donor" type="_KE_9cGTBEe2rVZWVbeTsiw" association="_AfeWMGTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Afe9QGTYEe2aR830N8nOoQ" name="&lt;&lt;boundary>> donor portal" type="_TizUoGTBEe2rVZWVbeTsiw" association="_AfeWMGTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_DsvjcGTYEe2aR830N8nOoQ" name="&lt;&lt;Control>> Make Donation"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_F5hkEGTYEe2aR830N8nOoQ" name="&lt;&lt;Entity>> Payment Gateway"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_JHJ9sGTYEe2aR830N8nOoQ" name="&lt;&lt;Control>> Verify Payment Credentials"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_L6qAEGTYEe2aR830N8nOoQ" name="&lt;&lt;Control>> Check Sufficient Funds"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PDVoQGTYEe2aR830N8nOoQ" memberEnd="_PDWPUGTYEe2aR830N8nOoQ _PDWPUWTYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PDVoQWTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PDVoQmTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PDWPUGTYEe2aR830N8nOoQ" name="&lt;&lt;control>> make donation" type="_DsvjcGTYEe2aR830N8nOoQ" association="_PDVoQGTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PDWPUWTYEe2aR830N8nOoQ" name="&lt;&lt;boundary>> donor portal" type="_TizUoGTBEe2rVZWVbeTsiw" association="_PDVoQGTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PjXMIGTYEe2aR830N8nOoQ" memberEnd="_PjXzMmTYEe2aR830N8nOoQ _PjXzM2TYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PjXzMGTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PjXzMWTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PjXzMmTYEe2aR830N8nOoQ" name="&lt;&lt;entity>> payment gateway" type="_F5hkEGTYEe2aR830N8nOoQ" association="_PjXMIGTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PjXzM2TYEe2aR830N8nOoQ" name="&lt;&lt;control>> make donation" type="_DsvjcGTYEe2aR830N8nOoQ" association="_PjXMIGTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_P-Y7QGTYEe2aR830N8nOoQ" memberEnd="_P-ZiUmTYEe2aR830N8nOoQ _P-ZiU2TYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_P-ZiUGTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_P-ZiUWTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_P-ZiUmTYEe2aR830N8nOoQ" name="&lt;&lt;control>> verify payment credentials" type="_JHJ9sGTYEe2aR830N8nOoQ" association="_P-Y7QGTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_P-ZiU2TYEe2aR830N8nOoQ" name="&lt;&lt;entity>> payment gateway" type="_F5hkEGTYEe2aR830N8nOoQ" association="_P-Y7QGTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_QuBBYGTYEe2aR830N8nOoQ" memberEnd="_QuBBY2TYEe2aR830N8nOoQ _QuBocGTYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QuBBYWTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QuBBYmTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QuBBY2TYEe2aR830N8nOoQ" name="&lt;&lt;control>> check sufficient funds" type="_L6qAEGTYEe2aR830N8nOoQ" association="_QuBBYGTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QuBocGTYEe2aR830N8nOoQ" name="&lt;&lt;entity>> payment gateway" type="_F5hkEGTYEe2aR830N8nOoQ" association="_QuBBYGTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Rl5roGTYEe2aR830N8nOoQ" memberEnd="_Rl6SsWTYEe2aR830N8nOoQ _Rl6SsmTYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rl5roWTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Rl6SsGTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Rl6SsWTYEe2aR830N8nOoQ" name="&lt;&lt;entity>> payment gateway" type="_F5hkEGTYEe2aR830N8nOoQ" association="_Rl5roGTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Rl6SsmTYEe2aR830N8nOoQ" name="&lt;&lt;boundary>> donor portal" type="_TizUoGTBEe2rVZWVbeTsiw" association="_Rl5roGTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_Vt9GIGTYEe2aR830N8nOoQ" name="&lt;&lt;Boundary>> Sign Up Page"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_XwzusGTYEe2aR830N8nOoQ" name="&lt;&lt;Boundary>> Login Page"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_dgsCoGTYEe2aR830N8nOoQ" name="&lt;&lt;Entity>> Auth System"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_ga2tsGTYEe2aR830N8nOoQ" name="&lt;&lt;Control>> Login To Site"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_iLyf0GTYEe2aR830N8nOoQ" name="&lt;&lt;Control>> Create New Account"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lgOFAGTYEe2aR830N8nOoQ" memberEnd="_lgOsEmTYEe2aR830N8nOoQ _lgOsE2TYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lgOsEGTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lgOsEWTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lgOsEmTYEe2aR830N8nOoQ" name="&lt;&lt;control>> create new account" type="_iLyf0GTYEe2aR830N8nOoQ" association="_lgOFAGTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lgOsE2TYEe2aR830N8nOoQ" name="&lt;&lt;entity>> auth system" type="_dgsCoGTYEe2aR830N8nOoQ" association="_lgOFAGTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mKqJIGTYEe2aR830N8nOoQ" memberEnd="_mKqJI2TYEe2aR830N8nOoQ _mKqJJGTYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mKqJIWTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mKqJImTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mKqJI2TYEe2aR830N8nOoQ" name="&lt;&lt;entity>> auth system" type="_dgsCoGTYEe2aR830N8nOoQ" association="_mKqJIGTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mKqJJGTYEe2aR830N8nOoQ" name="&lt;&lt;boundary>> sign up page" type="_Vt9GIGTYEe2aR830N8nOoQ" association="_mKqJIGTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mhfUwGTYEe2aR830N8nOoQ" memberEnd="_mhfUw2TYEe2aR830N8nOoQ _mhfUxGTYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mhfUwWTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mhfUwmTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mhfUw2TYEe2aR830N8nOoQ" name="&lt;&lt;entity>> auth system" type="_dgsCoGTYEe2aR830N8nOoQ" association="_mhfUwGTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mhfUxGTYEe2aR830N8nOoQ" name="&lt;&lt;boundary>> login page" type="_XwzusGTYEe2aR830N8nOoQ" association="_mhfUwGTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wKPXsGTYEe2aR830N8nOoQ" memberEnd="_wKP-wmTYEe2aR830N8nOoQ _wKQl0GTYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wKP-wGTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wKP-wWTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wKP-wmTYEe2aR830N8nOoQ" name="&lt;&lt;boundary>> login page" type="_XwzusGTYEe2aR830N8nOoQ" association="_wKPXsGTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wKQl0GTYEe2aR830N8nOoQ" name="&lt;&lt;control>> login to site" type="_ga2tsGTYEe2aR830N8nOoQ" association="_wKPXsGTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_x5dSkGTYEe2aR830N8nOoQ" memberEnd="_x5d5oWTYEe2aR830N8nOoQ _x5d5omTYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_x5dSkWTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_x5d5oGTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_x5d5oWTYEe2aR830N8nOoQ" name="&lt;&lt;entity>> auth system" type="_dgsCoGTYEe2aR830N8nOoQ" association="_x5dSkGTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_x5d5omTYEe2aR830N8nOoQ" name="&lt;&lt;control>> login to site" type="_ga2tsGTYEe2aR830N8nOoQ" association="_x5dSkGTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_y3foIGTYEe2aR830N8nOoQ" memberEnd="_y3foI2TYEe2aR830N8nOoQ _y3gPMGTYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_y3foIWTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_y3foImTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_y3foI2TYEe2aR830N8nOoQ" name="&lt;&lt;control>> create new account" type="_iLyf0GTYEe2aR830N8nOoQ" association="_y3foIGTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_y3gPMGTYEe2aR830N8nOoQ" name="&lt;&lt;boundary>> sign up page" type="_Vt9GIGTYEe2aR830N8nOoQ" association="_y3foIGTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_1dCHAGTYEe2aR830N8nOoQ" name="&lt;&lt;Boundary>> Edit Profile Page"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9qWtwGTYEe2aR830N8nOoQ" memberEnd="_9qXU0mTYEe2aR830N8nOoQ _9qXU02TYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9qXU0GTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9qXU0WTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9qXU0mTYEe2aR830N8nOoQ" name="&lt;&lt;boundary>> login page" type="_XwzusGTYEe2aR830N8nOoQ" association="_9qWtwGTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9qXU02TYEe2aR830N8nOoQ" type="_KE_9cGTBEe2rVZWVbeTsiw" association="_9qWtwGTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-H0s4GTYEe2aR830N8nOoQ" memberEnd="_-H1T8mTYEe2aR830N8nOoQ _-H1T82TYEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-H1T8GTYEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-H1T8WTYEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-H1T8mTYEe2aR830N8nOoQ" type="_KE_9cGTBEe2rVZWVbeTsiw" association="_-H0s4GTYEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-H1T82TYEe2aR830N8nOoQ" name="&lt;&lt;boundary>> sign up page" type="_Vt9GIGTYEe2aR830N8nOoQ" association="_-H0s4GTYEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CXLpQGTZEe2aR830N8nOoQ" memberEnd="_CXMQUmTZEe2aR830N8nOoQ _CXMQU2TZEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CXMQUGTZEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CXMQUWTZEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CXMQUmTZEe2aR830N8nOoQ" name="&lt;&lt;boundary>> sign up page" type="_Vt9GIGTYEe2aR830N8nOoQ" association="_CXLpQGTZEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CXMQU2TZEe2aR830N8nOoQ" name="volunteer" type="_JfMhsGTBEe2rVZWVbeTsiw" association="_CXLpQGTZEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_C0f3YGTZEe2aR830N8nOoQ" memberEnd="_C0f3Y2TZEe2aR830N8nOoQ _C0f3ZGTZEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C0f3YWTZEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_C0f3YmTZEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_C0f3Y2TZEe2aR830N8nOoQ" name="&lt;&lt;boundary>> login page" type="_XwzusGTYEe2aR830N8nOoQ" association="_C0f3YGTZEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_C0f3ZGTZEe2aR830N8nOoQ" name="volunteer" type="_JfMhsGTBEe2rVZWVbeTsiw" association="_C0f3YGTZEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FCs0UGTZEe2aR830N8nOoQ" memberEnd="_FCtbYmTZEe2aR830N8nOoQ _FCtbY2TZEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FCtbYGTZEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FCtbYWTZEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FCtbYmTZEe2aR830N8nOoQ" name="volunteer" type="_JfMhsGTBEe2rVZWVbeTsiw" association="_FCs0UGTZEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FCtbY2TZEe2aR830N8nOoQ" name="&lt;&lt;boundary>> edit profile page" type="_1dCHAGTYEe2aR830N8nOoQ" association="_FCs0UGTZEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_HtmUUGTZEe2aR830N8nOoQ" name="&lt;&lt;Control>> Change Position"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_J0pgYGTZEe2aR830N8nOoQ" name="&lt;&lt;Entity>> Volunteers Database"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_L0pCMGTZEe2aR830N8nOoQ" name="&lt;&lt;Control>> Choose Position"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PQdBwGTZEe2aR830N8nOoQ" memberEnd="_PQdo0mTZEe2aR830N8nOoQ _PQdo02TZEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PQdo0GTZEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PQdo0WTZEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PQdo0mTZEe2aR830N8nOoQ" type="_JfMhsGTBEe2rVZWVbeTsiw" association="_PQdBwGTZEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PQdo02TZEe2aR830N8nOoQ" name="&lt;&lt;control>> choose position" type="_L0pCMGTZEe2aR830N8nOoQ" association="_PQdBwGTZEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RewsYGTZEe2aR830N8nOoQ" memberEnd="_RexTcWTZEe2aR830N8nOoQ _RexTcmTZEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RewsYWTZEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RexTcGTZEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RexTcWTZEe2aR830N8nOoQ" name="&lt;&lt;control>> choose position" type="_L0pCMGTZEe2aR830N8nOoQ" association="_RewsYGTZEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RexTcmTZEe2aR830N8nOoQ" name="&lt;&lt;boundary>> sign up page" type="_Vt9GIGTYEe2aR830N8nOoQ" association="_RewsYGTZEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TDcyQGTZEe2aR830N8nOoQ" memberEnd="_TDdZUmTZEe2aR830N8nOoQ _TDdZU2TZEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TDdZUGTZEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TDdZUWTZEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TDdZUmTZEe2aR830N8nOoQ" name="&lt;&lt;control>> change position" type="_HtmUUGTZEe2aR830N8nOoQ" association="_TDcyQGTZEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TDdZU2TZEe2aR830N8nOoQ" name="&lt;&lt;boundary>> edit profile page" type="_1dCHAGTYEe2aR830N8nOoQ" association="_TDcyQGTZEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_T0nwgGTZEe2aR830N8nOoQ" memberEnd="_T0oXkmTZEe2aR830N8nOoQ _T0oXk2TZEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T0oXkGTZEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_T0oXkWTZEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_T0oXkmTZEe2aR830N8nOoQ" name="&lt;&lt;entity>> volunteers database" type="_J0pgYGTZEe2aR830N8nOoQ" association="_T0nwgGTZEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_T0oXk2TZEe2aR830N8nOoQ" name="&lt;&lt;control>> choose position" type="_L0pCMGTZEe2aR830N8nOoQ" association="_T0nwgGTZEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UjZiEGTZEe2aR830N8nOoQ" memberEnd="_UjZiE2TZEe2aR830N8nOoQ _UjaJIGTZEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UjZiEWTZEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UjZiEmTZEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UjZiE2TZEe2aR830N8nOoQ" name="&lt;&lt;control>> change position" type="_HtmUUGTZEe2aR830N8nOoQ" association="_UjZiEGTZEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UjaJIGTZEe2aR830N8nOoQ" name="&lt;&lt;entity>> volunteers database" type="_J0pgYGTZEe2aR830N8nOoQ" association="_UjZiEGTZEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_jSw5gGTZEe2aR830N8nOoQ" name="&lt;&lt;Boundary>> Request Application Form"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_mzw7EGTZEe2aR830N8nOoQ" name="&lt;&lt;Control>> Apply To Request"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_pXajkGTZEe2aR830N8nOoQ" name="&lt;&lt;Entity>> Requests Database"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tAOdUGTZEe2aR830N8nOoQ" memberEnd="_tAPEYmTZEe2aR830N8nOoQ _tAPrcGTZEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tAPEYGTZEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tAPEYWTZEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tAPEYmTZEe2aR830N8nOoQ" name="&lt;&lt;control>> apply to request" type="_mzw7EGTZEe2aR830N8nOoQ" association="_tAOdUGTZEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tAPrcGTZEe2aR830N8nOoQ" name="&lt;&lt;boundary>> request application form" type="_jSw5gGTZEe2aR830N8nOoQ" association="_tAOdUGTZEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0lwrUGTZEe2aR830N8nOoQ" memberEnd="_0lxSYmTZEe2aR830N8nOoQ _0lxSY2TZEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0lxSYGTZEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0lxSYWTZEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0lxSYmTZEe2aR830N8nOoQ" name="&lt;&lt;entity>> requests database" type="_pXajkGTZEe2aR830N8nOoQ" association="_0lwrUGTZEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0lxSY2TZEe2aR830N8nOoQ" name="&lt;&lt;control>> apply to request" type="_mzw7EGTZEe2aR830N8nOoQ" association="_0lwrUGTZEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2TKoUGTZEe2aR830N8nOoQ" memberEnd="_2TLPYmTZEe2aR830N8nOoQ _2TLPY2TZEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2TLPYGTZEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2TLPYWTZEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2TLPYmTZEe2aR830N8nOoQ" name="&lt;&lt;boundary>> request application form" type="_jSw5gGTZEe2aR830N8nOoQ" association="_2TKoUGTZEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2TLPY2TZEe2aR830N8nOoQ" type="_JfMhsGTBEe2rVZWVbeTsiw" association="_2TKoUGTZEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_4RogIGTZEe2aR830N8nOoQ" name="Website Browser"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_6ZZd4GTZEe2aR830N8nOoQ" name="&lt;&lt;Boundary>> Requests Form"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-JRB4GTZEe2aR830N8nOoQ" memberEnd="_-JRo8mTZEe2aR830N8nOoQ _-JRo82TZEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-JRo8GTZEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-JRo8WTZEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-JRo8mTZEe2aR830N8nOoQ" name="website browser" type="_4RogIGTZEe2aR830N8nOoQ" association="_-JRB4GTZEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-JRo82TZEe2aR830N8nOoQ" name="&lt;&lt;boundary>> requests form" type="_6ZZd4GTZEe2aR830N8nOoQ" association="_-JRB4GTZEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_-wR-kGTZEe2aR830N8nOoQ" name="&lt;&lt;Control>> Submit Request"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EqhvcGTaEe2aR830N8nOoQ" memberEnd="_Eqhvc2TaEe2aR830N8nOoQ _EqhvdGTaEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EqhvcWTaEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EqhvcmTaEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Eqhvc2TaEe2aR830N8nOoQ" name="&lt;&lt;control>> submit request" type="_-wR-kGTZEe2aR830N8nOoQ" association="_EqhvcGTaEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EqhvdGTaEe2aR830N8nOoQ" name="&lt;&lt;boundary>> requests form" type="_6ZZd4GTZEe2aR830N8nOoQ" association="_EqhvcGTaEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FTIAgGTaEe2aR830N8nOoQ" memberEnd="_FTInkmTaEe2aR830N8nOoQ _FTInk2TaEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FTInkGTaEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FTInkWTaEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FTInkmTaEe2aR830N8nOoQ" name="&lt;&lt;entity>> requests database" type="_pXajkGTZEe2aR830N8nOoQ" association="_FTIAgGTaEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FTInk2TaEe2aR830N8nOoQ" name="&lt;&lt;control>> submit request" type="_-wR-kGTZEe2aR830N8nOoQ" association="_FTIAgGTaEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G8LB8GTaEe2aR830N8nOoQ" memberEnd="_G8LpAmTaEe2aR830N8nOoQ _G8LpA2TaEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G8LpAGTaEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_G8LpAWTaEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_G8LpAmTaEe2aR830N8nOoQ" name="&lt;&lt;control>> submit request" type="_-wR-kGTZEe2aR830N8nOoQ" association="_G8LB8GTaEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_G8LpA2TaEe2aR830N8nOoQ" name="&lt;&lt;control>> apply to request" type="_mzw7EGTZEe2aR830N8nOoQ" association="_G8LB8GTaEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_LguLMGTaEe2aR830N8nOoQ" name="&lt;&lt;Boundary>> Admin Portal"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fe0RUGTaEe2aR830N8nOoQ" memberEnd="_fe0RU2TaEe2aR830N8nOoQ _fe04YGTaEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fe0RUWTaEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fe0RUmTaEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fe0RU2TaEe2aR830N8nOoQ" name="&lt;&lt;boundary>> admin portal" type="_LguLMGTaEe2aR830N8nOoQ" association="_fe0RUGTaEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fe04YGTaEe2aR830N8nOoQ" name="admin" type="_HA_Z4GTBEe2rVZWVbeTsiw" association="_fe0RUGTaEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jYn0cGTaEe2aR830N8nOoQ" memberEnd="_jYobgmTaEe2aR830N8nOoQ _jYobg2TaEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jYobgGTaEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jYobgWTaEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jYobgmTaEe2aR830N8nOoQ" name="&lt;&lt;boundary>> sign up page" type="_Vt9GIGTYEe2aR830N8nOoQ" association="_jYn0cGTaEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jYobg2TaEe2aR830N8nOoQ" name="admin" type="_HA_Z4GTBEe2rVZWVbeTsiw" association="_jYn0cGTaEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_nkZ4YGTaEe2aR830N8nOoQ" name="&lt;&lt;Control>> Approve/Deny Requests"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_syz28GTaEe2aR830N8nOoQ" name="&lt;&lt;Control>> View Open Requests"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_x0BuEGTaEe2aR830N8nOoQ" memberEnd="_x0CVImTaEe2aR830N8nOoQ _x0CVI2TaEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_x0CVIGTaEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_x0CVIWTaEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_x0CVImTaEe2aR830N8nOoQ" name="&lt;&lt;control>> approve/deny requests" type="_nkZ4YGTaEe2aR830N8nOoQ" association="_x0BuEGTaEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_x0CVI2TaEe2aR830N8nOoQ" name="&lt;&lt;boundary>> admin portal" type="_LguLMGTaEe2aR830N8nOoQ" association="_x0BuEGTaEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yisx8GTaEe2aR830N8nOoQ" memberEnd="_yitZAmTaEe2aR830N8nOoQ _yitZA2TaEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yitZAGTaEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yitZAWTaEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yitZAmTaEe2aR830N8nOoQ" type="_0lwrUGTZEe2aR830N8nOoQ" association="_yisx8GTaEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yitZA2TaEe2aR830N8nOoQ" name="&lt;&lt;control>> approve/deny requests" type="_nkZ4YGTaEe2aR830N8nOoQ" association="_yisx8GTaEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zr3ZcGTaEe2aR830N8nOoQ" memberEnd="_zr3Zc2TaEe2aR830N8nOoQ _zr4AgGTaEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zr3ZcWTaEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zr3ZcmTaEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zr3Zc2TaEe2aR830N8nOoQ" name="&lt;&lt;boundary>> admin portal" type="_LguLMGTaEe2aR830N8nOoQ" association="_zr3ZcGTaEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zr4AgGTaEe2aR830N8nOoQ" name="&lt;&lt;control>> view open requests" type="_syz28GTaEe2aR830N8nOoQ" association="_zr3ZcGTaEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0adk0GTaEe2aR830N8nOoQ" memberEnd="_0adk02TaEe2aR830N8nOoQ _0aeL4GTaEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0adk0WTaEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0adk0mTaEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0adk02TaEe2aR830N8nOoQ" name="&lt;&lt;entity>> requests database" type="_pXajkGTZEe2aR830N8nOoQ" association="_0adk0GTaEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0aeL4GTaEe2aR830N8nOoQ" name="&lt;&lt;control>> view open requests" type="_syz28GTaEe2aR830N8nOoQ" association="_0adk0GTaEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="__LrrsGTaEe2aR830N8nOoQ" name="&lt;&lt;Boundary>> Feedback Form"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_BowLEGTbEe2aR830N8nOoQ" name="&lt;&lt;Control>> Leave Feedback"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G80swGTbEe2aR830N8nOoQ" memberEnd="_G81T0mTbEe2aR830N8nOoQ _G81T02TbEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G81T0GTbEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_G81T0WTbEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_G81T0mTbEe2aR830N8nOoQ" name="&lt;&lt;boundary>> feedback form" type="__LrrsGTaEe2aR830N8nOoQ" association="_G80swGTbEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_G81T02TbEe2aR830N8nOoQ" name="website browser" type="_4RogIGTZEe2aR830N8nOoQ" association="_G80swGTbEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_OD6rQGTbEe2aR830N8nOoQ" name="&lt;&lt;Control>> Feedback Database"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Tk9R8GTbEe2aR830N8nOoQ" memberEnd="_Tk95AmTbEe2aR830N8nOoQ _Tk95A2TbEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tk95AGTbEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tk95AWTbEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Tk95AmTbEe2aR830N8nOoQ" name="&lt;&lt;control>> feedback database" type="_OD6rQGTbEe2aR830N8nOoQ" association="_Tk9R8GTbEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Tk95A2TbEe2aR830N8nOoQ" name="&lt;&lt;control>> leave feedback" type="_BowLEGTbEe2aR830N8nOoQ" association="_Tk9R8GTbEe2aR830N8nOoQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Yk26cGTbEe2aR830N8nOoQ" memberEnd="_Yk26c2TbEe2aR830N8nOoQ _Yk26dGTbEe2aR830N8nOoQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Yk26cWTbEe2aR830N8nOoQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Yk26cmTbEe2aR830N8nOoQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Yk26c2TbEe2aR830N8nOoQ" name="&lt;&lt;control>> leave feedback" type="_BowLEGTbEe2aR830N8nOoQ" association="_Yk26cGTbEe2aR830N8nOoQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Yk26dGTbEe2aR830N8nOoQ" name="&lt;&lt;boundary>> feedback form" type="__LrrsGTaEe2aR830N8nOoQ" association="_Yk26cGTbEe2aR830N8nOoQ"/>
+  </packagedElement>
+</uml:Model>

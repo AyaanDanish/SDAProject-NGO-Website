@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dU8ToHLkEe2FrYUNuinklg" name="SDA Project - Timing Diagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_dWEVAHLkEe2FrYUNuinklg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_hRdzkHLkEe2FrYUNuinklg" name="Interaction2">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_qBSqcHLkEe2FrYUNuinklg" name="Admin Portal"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_qsT9YHLkEe2FrYUNuinklg" name="Auth System"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_rIXnQHLkEe2FrYUNuinklg" name="Admin" coveredBy="_NtsnEnLmEe2FrYUNuinklg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NtsAA3LmEe2FrYUNuinklg" source="org.eclipse.papyrus.uml.diagram.timing.LifelineStateDefinitions">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NtsnEHLmEe2FrYUNuinklg" key="_NtsAAHLmEe2FrYUNuinklg" value="dawdaw"/>
+      </eAnnotations>
+    </lifeline>
+    <fragment xmi:type="uml:StateInvariant" xmi:id="_NtsnEnLmEe2FrYUNuinklg" name="dawdaw_1" covered="_rIXnQHLkEe2FrYUNuinklg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NtsnFXLmEe2FrYUNuinklg" source="org.eclipse.papyrus.uml.diagram.timing.StateInvariant">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NtsnFnLmEe2FrYUNuinklg" key="org.eclipse.papyrus.uml.diagram.timing.StateInvariantStateDefinitionId" value="_NtsAAHLmEe2FrYUNuinklg"/>
+      </eAnnotations>
+      <invariant xmi:type="uml:Constraint" xmi:id="_NtsnE3LmEe2FrYUNuinklg" name="InState_dawdaw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_NtsnFHLmEe2FrYUNuinklg">
+          <body>dawdaw</body>
+        </specification>
+      </invariant>
+    </fragment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_NwiDMHLnEe2FrYUNuinklg" name="Admin Interaction">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_RX9c4HLnEe2FrYUNuinklg" name="Admin Portal"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_R5BikHLnEe2FrYUNuinklg" name="Auth System"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_SNJYcHLnEe2FrYUNuinklg" name="Admin" coveredBy="_UkjUtnLnEe2FrYUNuinklg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UkjUs3LnEe2FrYUNuinklg" source="org.eclipse.papyrus.uml.diagram.timing.LifelineStateDefinitions">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UkjUtHLnEe2FrYUNuinklg" key="_UkjUsHLnEe2FrYUNuinklg" value="Entering Info"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yd7_Q3LnEe2FrYUNuinklg" key="_yd7_QHLnEe2FrYUNuinklg" value="hjkhjkhkj"/>
+      </eAnnotations>
+    </lifeline>
+    <fragment xmi:type="uml:StateInvariant" xmi:id="_UkjUtnLnEe2FrYUNuinklg" name="Entering Info_1" covered="_SNJYcHLnEe2FrYUNuinklg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ukj7wHLnEe2FrYUNuinklg" source="org.eclipse.papyrus.uml.diagram.timing.StateInvariant">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ukj7wXLnEe2FrYUNuinklg" key="org.eclipse.papyrus.uml.diagram.timing.StateInvariantStateDefinitionId" value="_UkjUsHLnEe2FrYUNuinklg"/>
+      </eAnnotations>
+      <invariant xmi:type="uml:Constraint" xmi:id="_UkjUt3LnEe2FrYUNuinklg" name="InState_Entering Info">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UkjUuHLnEe2FrYUNuinklg">
+          <body>Entering Info</body>
+        </specification>
+      </invariant>
+    </fragment>
+  </packagedElement>
+</uml:Model>

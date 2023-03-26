@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_fHHtwHOmEe2N8eNH-aJ0TA" name="SDA Project - Deployment Diagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_fH5J0HOmEe2N8eNH-aJ0TA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Node" xmi:id="_8lzZUHOmEe2N8eNH-aJ0TA" name="Supabase Backend Server">
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_vNC9kHOoEe2N8eNH-aJ0TA" name="Javascript Code" fileName=""/>
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_9V2EQHOoEe2N8eNH-aJ0TA" name="Supabase REST API" fileName=""/>
+    <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_b0OkMHOnEe2N8eNH-aJ0TA" name="Node.js"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Node" xmi:id="_BVVqkHOnEe2N8eNH-aJ0TA" name="Postgress Database Server">
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_3a3wEHOnEe2N8eNH-aJ0TA" name="Database" fileName="Database"/>
+    <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_iTPPAHOnEe2N8eNH-aJ0TA" name="PostgresQL"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_O7_tgHOnEe2N8eNH-aJ0TA" name="PC/Mobile Phone">
+    <nestedNode xmi:type="uml:Device" xmi:id="_e_6yMHOpEe2N8eNH-aJ0TA" name="Web Browser"/>
+    <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_ifdbMHOpEe2N8eNH-aJ0TA" name="HTML 5"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_mMl0QHOpEe2N8eNH-aJ0TA" name="Website" fileName=""/>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_1jeesHOpEe2N8eNH-aJ0TA" name="TCP/IP" memberEnd="_1jfFwnOpEe2N8eNH-aJ0TA _1jfFw3OpEe2N8eNH-aJ0TA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1jfFwHOpEe2N8eNH-aJ0TA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1jfFwXOpEe2N8eNH-aJ0TA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1jfFwnOpEe2N8eNH-aJ0TA" name="supabase backend server" type="_8lzZUHOmEe2N8eNH-aJ0TA" association="_1jeesHOpEe2N8eNH-aJ0TA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1jfFw3OpEe2N8eNH-aJ0TA" name="postgress database server" type="_BVVqkHOnEe2N8eNH-aJ0TA" association="_1jeesHOpEe2N8eNH-aJ0TA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_2K-jkHOpEe2N8eNH-aJ0TA" name="HTTPS: 80" memberEnd="_2K_KonOpEe2N8eNH-aJ0TA _2K_Ko3OpEe2N8eNH-aJ0TA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2K_KoHOpEe2N8eNH-aJ0TA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2K_KoXOpEe2N8eNH-aJ0TA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2K_KonOpEe2N8eNH-aJ0TA" name="supabase backend server" type="_8lzZUHOmEe2N8eNH-aJ0TA" association="_2K-jkHOpEe2N8eNH-aJ0TA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2K_Ko3OpEe2N8eNH-aJ0TA" name="pc/mobile phone" type="_O7_tgHOnEe2N8eNH-aJ0TA" association="_2K-jkHOpEe2N8eNH-aJ0TA"/>
+  </packagedElement>
+</uml:Model>

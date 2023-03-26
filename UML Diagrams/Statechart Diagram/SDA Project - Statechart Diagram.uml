@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_WGWpMHLoEe2FrYUNuinklg" name="SDA Project - Statechart Diagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_WGlSsHLoEe2FrYUNuinklg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_Wx1PIHLoEe2FrYUNuinklg" name="Admin State Machine">
+    <region xmi:type="uml:Region" xmi:id="_YkRdIHLoEe2FrYUNuinklg" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_DBQyMHLpEe2FrYUNuinklg" source="_zvNkcHLoEe2FrYUNuinklg" target="_1e6AcHLoEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_3T0eMHLpEe2FrYUNuinklg" source="_htHQ8HLoEe2FrYUNuinklg" target="_zvNkcHLoEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_C7-XoHLrEe2FrYUNuinklg" source="_Og_IYHLqEe2FrYUNuinklg" target="_wQDrEHLqEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_MzE_oHLrEe2FrYUNuinklg" name="Scroll To Requests Table" source="_wQDrEHLqEe2FrYUNuinklg" target="_HEtuoHLrEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_dCU1cHLrEe2FrYUNuinklg" source="_wQDrEHLqEe2FrYUNuinklg" target="_aHwhwHLrEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_kyV1IHLrEe2FrYUNuinklg" source="_aHwhwHLrEe2FrYUNuinklg" target="_Y5taRnLrEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_8Q7mgHLrEe2FrYUNuinklg" source="_zsuJwHLrEe2FrYUNuinklg" target="_wQDrEHLqEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_FBQMoHLsEe2FrYUNuinklg" name="Click Logout Button" source="_wQDrEHLqEe2FrYUNuinklg" target="_C0TM4HLsEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_IyBvkHLsEe2FrYUNuinklg" source="_C0TM4HLsEe2FrYUNuinklg" target="_HPFWIHLsEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_W1wJAHLsEe2FrYUNuinklg" name="Scroll To Top" source="_HEtuoHLrEe2FrYUNuinklg" target="_wQDrEHLqEe2FrYUNuinklg"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_htHQ8HLoEe2FrYUNuinklg" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_in9voHLoEe2FrYUNuinklg" name="Logging In">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_zvNkcHLoEe2FrYUNuinklg" name="Opened Login Page" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_Og_IYHLqEe2FrYUNuinklg" name="Redirected To Portal" kind="exitPoint"/>
+        <region xmi:type="uml:Region" xmi:id="_1e4yUHLoEe2FrYUNuinklg" name="Region2">
+          <transition xmi:type="uml:Transition" xmi:id="_M8TpkHLqEe2FrYUNuinklg" name="Credentials Sent" source="_1e6AcHLoEe2FrYUNuinklg" target="_cc-XkHLpEe2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_NqF8oHLqEe2FrYUNuinklg" name="Credentials Valid" source="_cc-XkHLpEe2FrYUNuinklg" target="_5uctkHLpEe2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_npJfoHLqEe2FrYUNuinklg" source="_5uctkHLpEe2FrYUNuinklg" target="_Og_IYHLqEe2FrYUNuinklg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_1e6AcHLoEe2FrYUNuinklg" name="Entering Credentials"/>
+          <subvertex xmi:type="uml:State" xmi:id="_cc-XkHLpEe2FrYUNuinklg" name="Waiting For Authentication"/>
+          <subvertex xmi:type="uml:State" xmi:id="_5uctkHLpEe2FrYUNuinklg" name="Being Redirected"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_wQDrEHLqEe2FrYUNuinklg" name="In Admin Portal"/>
+      <subvertex xmi:type="uml:State" xmi:id="_HEtuoHLrEe2FrYUNuinklg" name="Reviewing Requests"/>
+      <subvertex xmi:type="uml:State" xmi:id="_TW4D0HLrEe2FrYUNuinklg" name="Viewing Donations">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_aHwhwHLrEe2FrYUNuinklg" name="Scrolled To Donations Section" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_zsuJwHLrEe2FrYUNuinklg" name="Scroll To Top" kind="exitPoint"/>
+        <region xmi:type="uml:Region" xmi:id="_Y5szMnLrEe2FrYUNuinklg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_uxatYHLrEe2FrYUNuinklg" name="Donations Reviewed" source="_Y5taRnLrEe2FrYUNuinklg" target="_oEneMHLrEe2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_vU4KUHLsEe2FrYUNuinklg" source="_oEneMHLrEe2FrYUNuinklg" target="_zsuJwHLrEe2FrYUNuinklg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_Y5taRnLrEe2FrYUNuinklg" name="Viewing Total Donations"/>
+          <subvertex xmi:type="uml:State" xmi:id="_oEneMHLrEe2FrYUNuinklg" name="Viewing Per-Cause Donations"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_C0TM4HLsEe2FrYUNuinklg" name="Logging Out"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_HPFWIHLsEe2FrYUNuinklg" name=""/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_FFMcAHLtEe2FrYUNuinklg" name="Volunteer State Machine">
+    <region xmi:type="uml:Region" xmi:id="_GRTp0HLtEe2FrYUNuinklg" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_ioAZoHLtEe2FrYUNuinklg" source="_g4e8wHLtEe2FrYUNuinklg" target="_KC2BwXLtEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_jg4iYHLtEe2FrYUNuinklg" source="_KC2BwXLtEe2FrYUNuinklg" target="_N4O-8nLtEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_OAvlQHLuEe2FrYUNuinklg" source="_3-1NQHLtEe2FrYUNuinklg" target="_MwLVQHLuEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_SOvPsHLuEe2FrYUNuinklg" source="_KC2BwnLtEe2FrYUNuinklg" target="_3-1NQHLtEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ZdxCMHLuEe2FrYUNuinklg" source="_MwLVQHLuEe2FrYUNuinklg" target="_TQV2pnLuEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_idqVYHLuEe2FrYUNuinklg" source="_fMFP4HLuEe2FrYUNuinklg" target="_3-1NQHLtEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_6O6kEHLuEe2FrYUNuinklg" source="_3-1NQHLtEe2FrYUNuinklg" target="_5IThUHLuEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_-PAVYHLuEe2FrYUNuinklg" source="_9VFDwHLuEe2FrYUNuinklg" target="_3-1NQHLtEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ObfLEHLvEe2FrYUNuinklg" source="_5IThUHLuEe2FrYUNuinklg" target="_2BEDlnLuEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Ybl-EHLvEe2FrYUNuinklg" name="Scroll To Requests" source="_3-1NQHLtEe2FrYUNuinklg" target="_VZHEgHLvEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_dxXI4HLvEe2FrYUNuinklg" name="Application Sent/Cancelled" source="_VZHEgHLvEe2FrYUNuinklg" target="_3-1NQHLtEe2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Cn9dMHLwEe2FrYUNuinklg" name="Click Logout Button" source="_3-1NQHLtEe2FrYUNuinklg" target="_keXMYHLvEe2FrYUNuinklg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_KC2BwHLtEe2FrYUNuinklg" name="Logging In">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_KC2BwXLtEe2FrYUNuinklg" name="Opened Login Page" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_KC2BwnLtEe2FrYUNuinklg" name="Redirected To Portal" kind="exitPoint"/>
+        <region xmi:type="uml:Region" xmi:id="_KC2Bw3LtEe2FrYUNuinklg" name="Region2">
+          <transition xmi:type="uml:Transition" xmi:id="_KC2BxHLtEe2FrYUNuinklg" name="Credentials Sent" source="_KC2Bx3LtEe2FrYUNuinklg" target="_KC2ByHLtEe2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_KC2BxXLtEe2FrYUNuinklg" name="Credentials Valid" source="_KC2ByHLtEe2FrYUNuinklg" target="_KC2ByXLtEe2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_KC2BxnLtEe2FrYUNuinklg" source="_KC2ByXLtEe2FrYUNuinklg" target="_KC2BwnLtEe2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_kc8iAHLtEe2FrYUNuinklg" name="Credentials Sent" source="_N4O-8nLtEe2FrYUNuinklg" target="_N4O-8XLtEe2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_ng4NEHLtEe2FrYUNuinklg" name="Credentials Valid" source="_N4O-8XLtEe2FrYUNuinklg" target="_N4O-8HLtEe2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_pxCR0HLtEe2FrYUNuinklg" source="_N4O-8HLtEe2FrYUNuinklg" target="_KC2BwnLtEe2FrYUNuinklg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_KC2Bx3LtEe2FrYUNuinklg" name="Entering Credentials"/>
+          <subvertex xmi:type="uml:State" xmi:id="_KC2ByHLtEe2FrYUNuinklg" name="Waiting For Authentication"/>
+          <subvertex xmi:type="uml:State" xmi:id="_KC2ByXLtEe2FrYUNuinklg" name="Being Redirected"/>
+          <subvertex xmi:type="uml:State" xmi:id="_N4O-8HLtEe2FrYUNuinklg" name="Being Redirected"/>
+          <subvertex xmi:type="uml:State" xmi:id="_N4O-8nLtEe2FrYUNuinklg" name="Entering Credentials"/>
+          <subvertex xmi:type="uml:State" xmi:id="_N4O-8XLtEe2FrYUNuinklg" name="Waiting For Authentication"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_g4e8wHLtEe2FrYUNuinklg" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_3-1NQHLtEe2FrYUNuinklg" name="In Volunteer Portal"/>
+      <subvertex xmi:type="uml:State" xmi:id="_GbK7AHLuEe2FrYUNuinklg" name="Editing Credentials">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_MwLVQHLuEe2FrYUNuinklg" name="Click Edit Credentials Button" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_fMFP4HLuEe2FrYUNuinklg" name="Credentials Saved" kind="exitPoint"/>
+        <region xmi:type="uml:Region" xmi:id="_TQVPkXLuEe2FrYUNuinklg" name="Region2">
+          <transition xmi:type="uml:Transition" xmi:id="_hPHeoHLuEe2FrYUNuinklg" source="_TQV2pnLuEe2FrYUNuinklg" target="_fMFP4HLuEe2FrYUNuinklg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_TQV2pnLuEe2FrYUNuinklg" name="Entering New Credentials"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_yKEj4HLuEe2FrYUNuinklg" name="Changing Field">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_5IThUHLuEe2FrYUNuinklg" name="Click Change Field Button" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_9VFDwHLuEe2FrYUNuinklg" name="New Field Saved" kind="exitPoint"/>
+        <region xmi:type="uml:Region" xmi:id="_2BDcgXLuEe2FrYUNuinklg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_PLwxcHLvEe2FrYUNuinklg" source="_2BEDlnLuEe2FrYUNuinklg" target="_9VFDwHLuEe2FrYUNuinklg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_2BEDlnLuEe2FrYUNuinklg" name="Select New Field"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_VZHEgHLvEe2FrYUNuinklg" name="Applying To Open Requests"/>
+      <subvertex xmi:type="uml:State" xmi:id="_keXMYHLvEe2FrYUNuinklg" name="Logging Out"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_E7M1sHLxEe2FrYUNuinklg" name="Donor State Machine">
+    <region xmi:type="uml:Region" xmi:id="_GTmzEHLxEe2FrYUNuinklg" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_STJU8HL2Ee2FrYUNuinklg" source="_PSnjMHL2Ee2FrYUNuinklg" target="_QjJ-AHL2Ee2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_rbSeEHL2Ee2FrYUNuinklg" source="_QjJ-AHL2Ee2FrYUNuinklg" target="_A3EfoXL2Ee2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ywqwMHL2Ee2FrYUNuinklg" source="_oTMEsHL2Ee2FrYUNuinklg" target="_vwb5YHL2Ee2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_8Sz00HL2Ee2FrYUNuinklg" source="_vwb5YHL2Ee2FrYUNuinklg" target="_5KupkHL2Ee2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_UHLo8HL3Ee2FrYUNuinklg" name="Credentials Saved" source="_6oK38HL2Ee2FrYUNuinklg" target="_vwb5YHL2Ee2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Z1UQcHL3Ee2FrYUNuinklg" source="_5KupkHL2Ee2FrYUNuinklg" target="_CIpm03L3Ee2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_lEQ1IHL3Ee2FrYUNuinklg" source="_vwb5YHL2Ee2FrYUNuinklg" target="_hkaqIHL3Ee2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_qDyqMHL3Ee2FrYUNuinklg" source="_hkaqIHL3Ee2FrYUNuinklg" target="_mFUpgHL3Ee2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_IgUeEHL4Ee2FrYUNuinklg" source="_FSgeQHL4Ee2FrYUNuinklg" target="_vwb5YHL2Ee2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Yr6i8HL4Ee2FrYUNuinklg" source="_RAP3wHL4Ee2FrYUNuinklg" target="_vwb5YHL2Ee2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ad9IUHL4Ee2FrYUNuinklg" source="_vwb5YHL2Ee2FrYUNuinklg" target="_OVtkIHL4Ee2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_sts2QHL4Ee2FrYUNuinklg" source="_OVtkIHL4Ee2FrYUNuinklg" target="_biknBnL4Ee2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_NxaHwHL5Ee2FrYUNuinklg" name="Click Logout Button" source="_vwb5YHL2Ee2FrYUNuinklg" target="_LiWPMHL5Ee2FrYUNuinklg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_a8rPMHL5Ee2FrYUNuinklg" source="_LiWPMHL5Ee2FrYUNuinklg" target="_QWeFgHL5Ee2FrYUNuinklg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_92MvoHL1Ee2FrYUNuinklg" name="Logging In">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_QjJ-AHL2Ee2FrYUNuinklg" name="Opened Login Page" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_oTMEsHL2Ee2FrYUNuinklg" name="Redirected To Portal" kind="exitPoint"/>
+        <region xmi:type="uml:Region" xmi:id="_A3D4kHL2Ee2FrYUNuinklg">
+          <transition xmi:type="uml:Transition" xmi:id="_grLKcHL2Ee2FrYUNuinklg" name="Credentials Sent" source="_A3EfoXL2Ee2FrYUNuinklg" target="_C_xRgHL2Ee2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_jpqU0HL2Ee2FrYUNuinklg" name="Credentials Valid" source="_C_xRgHL2Ee2FrYUNuinklg" target="_K5ZgMHL2Ee2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_qar8sHL2Ee2FrYUNuinklg" source="_K5ZgMHL2Ee2FrYUNuinklg" target="_oTMEsHL2Ee2FrYUNuinklg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_A3EfoXL2Ee2FrYUNuinklg" name="Entering Credentials"/>
+          <subvertex xmi:type="uml:State" xmi:id="_C_xRgHL2Ee2FrYUNuinklg" name="Waiting For Authentication"/>
+          <subvertex xmi:type="uml:State" xmi:id="_K5ZgMHL2Ee2FrYUNuinklg" name="Being Redirected"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_PSnjMHL2Ee2FrYUNuinklg" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_vwb5YHL2Ee2FrYUNuinklg" name="In Donor Portal"/>
+      <subvertex xmi:type="uml:State" xmi:id="_3upGEHL2Ee2FrYUNuinklg" name="Editing Credentials">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_5KupkHL2Ee2FrYUNuinklg" name="Click Edit Credentials Button" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_6oK38HL2Ee2FrYUNuinklg" kind="exitPoint"/>
+        <region xmi:type="uml:Region" xmi:id="_CIo_wHL3Ee2FrYUNuinklg" name="Region3">
+          <transition xmi:type="uml:Transition" xmi:id="_bZqYEHL3Ee2FrYUNuinklg" source="_CIpm03L3Ee2FrYUNuinklg" target="_6oK38HL2Ee2FrYUNuinklg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_CIpm03L3Ee2FrYUNuinklg" name="Entering New Credentials"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_ejVewHL3Ee2FrYUNuinklg" name="Making Donation">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_hkaqIHL3Ee2FrYUNuinklg" name="Open Donation Page" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_FSgeQHL4Ee2FrYUNuinklg" name="Donation Made Successfully" kind="exitPoint"/>
+        <region xmi:type="uml:Region" xmi:id="_mFTbYnL3Ee2FrYUNuinklg" name="Region2">
+          <transition xmi:type="uml:Transition" xmi:id="_uaBDkHL3Ee2FrYUNuinklg" name="Cause Selected" source="_mFUpgHL3Ee2FrYUNuinklg" target="_rHEsIHL3Ee2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_0BYUsHL3Ee2FrYUNuinklg" name="Credentials Valid" source="_rHEsIHL3Ee2FrYUNuinklg" target="_wktZgHL3Ee2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_AW4RwHL4Ee2FrYUNuinklg" name="Payment Complete" source="_wktZgHL3Ee2FrYUNuinklg" target="_9nbB4HL3Ee2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_GICYEHL4Ee2FrYUNuinklg" source="_9nbB4HL3Ee2FrYUNuinklg" target="_FSgeQHL4Ee2FrYUNuinklg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_mFUpgHL3Ee2FrYUNuinklg" name="Selecting Cause"/>
+          <subvertex xmi:type="uml:State" xmi:id="_rHEsIHL3Ee2FrYUNuinklg" name="Entering Payment Info"/>
+          <subvertex xmi:type="uml:State" xmi:id="_wktZgHL3Ee2FrYUNuinklg" name="Waiting For Authentication"/>
+          <subvertex xmi:type="uml:State" xmi:id="_9nbB4HL3Ee2FrYUNuinklg" name="Receiving Receipt"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_LdCG0HL4Ee2FrYUNuinklg" name="Redeeming Points">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_OVtkIHL4Ee2FrYUNuinklg" name="Open Points Page" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_RAP3wHL4Ee2FrYUNuinklg" name="Points Redeemed" kind="exitPoint"/>
+        <region xmi:type="uml:Region" xmi:id="_bij_8HL4Ee2FrYUNuinklg" name="Region3">
+          <transition xmi:type="uml:Transition" xmi:id="_sE5w4HL4Ee2FrYUNuinklg" name="Sufficient Points" source="_biknBnL4Ee2FrYUNuinklg" target="_lS7GwHL4Ee2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_1dDMAHL4Ee2FrYUNuinklg" source="_t2N9gHL4Ee2FrYUNuinklg" target="_RAP3wHL4Ee2FrYUNuinklg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_2pUx4HL4Ee2FrYUNuinklg" name="Cause Decided" source="_lS7GwHL4Ee2FrYUNuinklg" target="_t2N9gHL4Ee2FrYUNuinklg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_biknBnL4Ee2FrYUNuinklg" name="Viewing Available Points"/>
+          <subvertex xmi:type="uml:State" xmi:id="_lS7GwHL4Ee2FrYUNuinklg" name="Selecting Cause"/>
+          <subvertex xmi:type="uml:State" xmi:id="_t2N9gHL4Ee2FrYUNuinklg" name="Confirming"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_LiWPMHL5Ee2FrYUNuinklg" name="Logging Out"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_QWeFgHL5Ee2FrYUNuinklg"/>
+    </region>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_epRQAXLpEe2FrYUNuinklg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_epRQAnLpEe2FrYUNuinklg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
